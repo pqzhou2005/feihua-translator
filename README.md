@@ -1,4 +1,4 @@
-# 废话翻译器
+# 不会说话急救箱
 
 移动端优先的中文表达改写小工具：把不能直接说的话，翻译成能发出去的话。
 
@@ -59,7 +59,7 @@ app/
   layout.tsx              SEO 和全局布局
   page.tsx                首页
 components/
-  FeihuaTranslator.tsx    工具 UI 和分享图导出
+  SpeechFirstAidKit.tsx   工具 UI 和分享图导出
 lib/
   options.ts              场景、语气枚举
   translator.ts           模型调用和返回结果清洗

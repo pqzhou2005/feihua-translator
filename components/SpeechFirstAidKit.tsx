@@ -20,7 +20,7 @@ type ApiResponse = {
   error?: string;
 };
 
-export default function FeihuaTranslator() {
+export default function SpeechFirstAidKit() {
   const [input, setInput] = useState("");
   const [scene, setScene] = useState<Scene>("职场");
   const [tone, setTone] = useState<Tone>("体面");
@@ -109,7 +109,7 @@ export default function FeihuaTranslator() {
       setShareImageUrl(dataUrl);
       setShareMessage("分享图已生成。没有自动下载的话，可以长按图片保存，或点击下方链接下载。");
       const link = document.createElement("a");
-      link.download = `废话翻译器-${Date.now()}.png`;
+      link.download = `不会说话急救箱-${Date.now()}.png`;
       link.href = dataUrl;
       document.body.appendChild(link);
       link.click();
@@ -127,7 +127,7 @@ export default function FeihuaTranslator() {
         <section className="rounded-[24px] bg-paper px-5 py-7 shadow-sm ring-1 ring-black/5 sm:px-8 sm:py-10">
           <header className="space-y-3">
             <h1 className="text-[34px] font-black leading-tight tracking-normal sm:text-5xl">
-              废话翻译器
+              不会说话急救箱
             </h1>
             <p className="text-lg font-semibold leading-8 text-neutral-900">
               把不能直接说的话，翻译成能发出去的话。
@@ -291,12 +291,12 @@ export default function FeihuaTranslator() {
                 <div className="mt-3 space-y-3">
                   <img
                     src={shareImageUrl}
-                    alt="废话翻译器分享图"
+                    alt="不会说话急救箱分享图"
                     className="mx-auto w-full max-w-[360px] rounded-2xl border border-neutral-200 bg-white"
                   />
                   <a
                     href={shareImageUrl}
-                    download={`废话翻译器-${Date.now()}.png`}
+                    download={`不会说话急救箱-${Date.now()}.png`}
                     className="block rounded-2xl border border-neutral-300 bg-white px-4 py-3 text-center text-sm font-bold text-neutral-950 active:scale-[0.99]"
                   >
                     下载 PNG
@@ -372,7 +372,7 @@ const ShareCard = ({
       ref={ref}
       className="mx-auto flex aspect-[3/4] w-full max-w-[360px] flex-col bg-[#fbfaf7] p-8 text-left text-[#161616]"
     >
-      <div className="text-[26px] font-black leading-none">废话翻译器</div>
+      <div className="text-[26px] font-black leading-none">不会说话急救箱</div>
 
       <div className="mt-10 space-y-8">
         <div>

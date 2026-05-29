@@ -1,5 +1,5 @@
-import FeihuaTranslator from "@/components/FeihuaTranslator";
+import SpeechFirstAidKit from "@/components/SpeechFirstAidKit";
 
 export default function Home() {
-  return <FeihuaTranslator />;
+  return <SpeechFirstAidKit />;
 }
